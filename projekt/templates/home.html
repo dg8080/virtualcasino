@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if session.get('user_id') %}
+        <div class="card-group text-center text-white">
+            <div class="card bg-dark mb-3">
+                <img class="card-img-top" src="./static/automat.png">
+                <div class="card-body">
+                    <a class="btn btn-danger btn-lg fs-2" href="/play" role="button"><strong>Automat</strong></a>
+                    <hr>
+                    <p class="card-text">Zagraj w jednorękiego bandytę.</p>
+                </div>
+            </div>
+            <div class="card bg-dark mb-3">
+                <img class="card-img-top" src="./static/krupier.png">
+                <div class="card-body">
+                    <a class="btn btn-danger btn-lg fs-2" href="/play-ai" role="button"><strong>Stół</strong></a>
+                    <hr>
+                    <p class="card-text">Zagraj z krupierem AI w blackjacka lub kości.</p>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
