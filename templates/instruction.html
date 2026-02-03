@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class = "card text-white bg-dark p-3">
+    <h2 class="fs-1">Instrukcja</h2>
+    <hr>
+    <p><strong><i>Rozgrywki dostępne są wyłącznie dla zalogowanych użytkowników.</i></strong></p>
+    <p>W kasynie dostępne są trzy gry.</p>
+    <hr>
+    <p class="text-center"><strong>Jednoręki bandyta</strong></p>
+    <p style="text-indent: 100px;">Aby zagrać w jednorękiego bandytę, udaj się na automaty. Po podaniu stawki, kliknij przycisk "Zakręć!".</p>
+    <p><strong>WYGRANA: </strong>Wylosowane symbole są takie same. Gracz wygrywa kwotę jaką postawił. Jeśli wylosowane są same "siódemki", wygrana jest dziesięciokrotnie większa.</p>
+    <p><strong>PRZEGRANA: </strong>Wylosowane symbole nie są takie same. Gracz traci kwotę jaką postawił.</p>
+    <hr>
+    <p class="text-center"><strong>BlackJack</strong></p>
+    <p style="text-indent: 100px;">Gra w blackjacka jest obsługiwana przez krupiera AI. Aby rozpocząć rozgrywkę, w rozmowie z krupierem uwzględnij nazwę gry i stawkę. Napisz krupierowi czy dobierasz kartę, czy pasujesz. Możesz również skorzystać z przycisków z predefiniowanymi kwestiami.
+        <br/>Wartość karty jest równa liczbie z karty.<br/>Figury: walet, królowa i król mają wartość 10.<br/>As ma wartość 1 lub 11, zależnie od łącznej sumy, na korzyść gracza.</p>
+    <p><strong>WYGRANA: </strong>Gracz, który od razu na rękę dostanie blackjacka (figura + as), wygrywa podwójną stawkę. Gracz, który uzyska sumę wartości kart z ręki większą od sumy wartości kart krupiera i jednocześnie większą lub równą 21, wygrywa kwotę jaką postawił.</p>
+    <p><strong>PRZEGRANA: </strong>Gracz, który uzyska sumę wartości kart z ręki większą niż 21 lub większą od sumy wartości kart krupiera, traci kwotę jaką postawił.</p>
+    <p><strong>REMIS: </strong>Krupier i gracz mają taką samą sumę wartości kart na ręce. Gracz nic nie wygrywa, ani nie traci.</p>
+    <hr>
+    <p class="text-center"><strong>Kości</strong></p>
+    <p style="text-indent: 100px;">Gra w kości jest obsługiwana przez krupiera AI. Aby rozpocząć rozgrywkę, w rozmowie z krupierem uwzględnij nazwę gry, zakład parzyste/nieparzyte i stawkę. Możesz również uwzględnić jaką kostką ma rzucić krupier. Domyślnie jest to kostka D6. Możesz również skorzystać z przycisków z predefiniowanymi kwestiami.</p>
+    <p><strong>WYGRANA: </strong>Parzystość liczby wylosowanych oczek jest zgodna z zakładem. Gracz wygrywa kwotę jaką postawił.</p>
+    <p><strong>PRZEGRANA: </strong>Parzystość liczby wylosowanych oczek nie jest zgodna z zakładem. Gracz traci kwotę jaką postawił.</p>
+</div>
+{% endblock %}
